@@ -1,0 +1,8 @@
+include README.rst
+include LICENSE
+include CHANGES
+recursive-include ajax_upload/static *
+recursive-include ajax_upload/templates *
+recursive-include ajax_upload/tests/files *
+include example/*.py
+recursive-include example/templates *
