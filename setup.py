@@ -18,7 +18,7 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development'
     ],
-    author='Zach Mathew',
-    url='http://github.com/zmathew/django-ajax-upload-widget',
+    author='Domin Morales',
+    url='http://github.com/kal3ls/django-ajax-upload-widget',
     license='BSD',
 )
