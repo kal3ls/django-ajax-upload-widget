@@ -1,5 +1,6 @@
 LICENSE
 MANIFEST.in
+README.md
 README.rst
 ajax_upload/__init__.py
 ajax_upload/admin.py

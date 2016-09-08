@@ -2,9 +2,9 @@ Metadata-Version: 1.1
 Name: django-ajax-upload-widget
 Version: 0.5.5
 Summary: Provides AJAX file upload functionality for FileFields and ImageFields with a simple widget replacement in the form.
-Home-page: http://github.com/zmathew/django-ajax-upload-widget
-Author: Zach Mathew
-Author-email: UNKNOWN
+Home-page: http://github.com/kal3ls/django-ajax-upload-widget
+Author: Domin Adrian Morales
+Author-email: kal.3l.m@gmail.com
 License: BSD
 Description: Django Ajax Upload Widget
         =========================
