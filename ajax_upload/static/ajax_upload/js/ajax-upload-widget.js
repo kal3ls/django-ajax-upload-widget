@@ -9,9 +9,20 @@
             removeButtonText: 'Remove',
             previewAreaClass: 'ajax-upload-preview-area',
             previewFilenameLength: 30,
-            onUpload: null, // right before uploading to the server
+            onUpload: function() {
+	      var element_id = "#".concat(this.$element[0].id + "_msg");
+	      $(element_id).addClass('hidden');
+            },
             onComplete: null,
-            onError: null,
+            onError: function(data) {
+	      if (!(data.errors.file[0]  === undefined || data.errors.file[0] === null)) {
+		var element_id = "#".concat(this.$element[0].id);
+		console.log(element_id);
+		$(element_id).parent().after("<div id='" + this.$element[0].id + "_msg' class='validation' style='color:red;margin-bottom: 20px;'>" + data.errors.file[0] + "</div>");
+              } else {
+		$(element_id).parent().after("<div id='" + this.$element[0].id + "_msg' class='validation' style='color:red;margin-bottom: 20px;'>Something wrong happend, please try again</div>");
+	      }
+            },
             onRemove: null
         };
         $.extend(this.options, options);
